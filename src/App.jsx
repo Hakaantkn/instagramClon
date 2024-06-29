@@ -1,11 +1,15 @@
 import { useState } from 'react'
-
-
+import { Container, Box} from '@mui/material';
+import { InstagramWrapper } from './components/instagramWrapper';
 function App() {
 
   return (
     <>
-      <h1>instigram</h1>
+    <Container maxWidth="lg" width="100%" sx={{height: "100%"}}>
+      <Box sx={{flexGrow: 1}}>
+        <InstagramWrapper />
+      </Box>
+    </Container>
     </>
   )
 }
