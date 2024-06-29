@@ -5,8 +5,8 @@ function App() {
 
   return (
     <>
-    <Container maxWidth="lg" width="100%" sx={{height: "100%"}}>
-      <Box sx={{flexGrow: 1}}>
+    <Container maxWidth="lg" width="100%" sx={{height: "100%", marginTop: '1rem'}}>
+      <Box sx={{flexGrow: 1}} height="100%">
         <InstagramWrapper />
       </Box>
     </Container>

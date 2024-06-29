@@ -1,18 +1,14 @@
-import { Box, Stack  } from "@mui/material";
-
+import { Box, Stack, Avatar  } from "@mui/material";
+import { deepOrange } from "@mui/material/colors";
+import { ProfileCard } from "./profileCard";
 export const InstagramWrapper = () => {
     return (
-        <Stack>
-            <Stack direction={"row"} justifyContent={"space-between"}>
-                <Stack direction={"row"} gap={3}>
-                    <Box>PP</Box>
-                    <Box>nick name</Box>
-                </Stack>
-                <Box>...</Box>
-            </Stack>
-                <Stack>
-                    <img src="" alt="Reels or post" />
-                </Stack>
+        <Stack width="100%">
+            {[...Array(10).keys()].map(element => {
+                return (
+                    <ProfileCard key={element} id={element}/>
+                )
+            })}
         </Stack>
     )
 }
