@@ -9,11 +9,11 @@ export const ProfileCard = ({id}) => {
                     <Stack direction={"row"} gap={3} alignItems={'center'} marginTop={'20px'}>
                         {/* <Box sx={{backgroundColor: "orange", padding: '1rem', borderRadius: '50%'}}>PP</Box> */}
                         <Avatar sx={{ bgcolor: deepOrange[500] }}>HT</Avatar>
-                        <Box>nick name</Box>
+                        <Box>Hakan Tekin</Box>
                     </Stack>
                     <Box>...</Box>
             </Stack>
-                    <Stack height="300px" width="500px" marginTop="20px" marginBottom="40px" sx={{marginInline: 'auto'}}>
+                    <Stack height="300px" width="500px" marginTop="20px" marginBottom="70px" sx={{marginInline: 'auto'}}>
                         <img src={`https://picsum.photos/500/300?random=${id}`}   alt="Reels or post"/>
                      <LikesAndCommends/>
 
